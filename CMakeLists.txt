@@ -14,6 +14,7 @@ add_library(tet SHARED tetgen.cxx predicates.cxx)
 set_target_properties(tet PROPERTIES "COMPILE_DEFINITIONS" TETLIBRARY)
 
 # Installation
-install(TARGETS tetgen DESTINATION lib)
+install(TARGETS tetgen DESTINATION bin)
+install(TARGETS tet DESTINATION lib)
 install(FILES ${PROJECT_SOURCE_DIR}/tetgen.h DESTINATION include)
 
